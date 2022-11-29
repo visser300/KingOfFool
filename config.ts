@@ -1,1 +1,0 @@
-export const kingOfFoolAddress = "0xDACB2A35b25F70A4412354b9803CBf41C54D1508"

@@ -1,12 +1,12 @@
 {
   "_format": "hh-sol-cache-2",
   "files": {
-    "/Users/quang/Documents/blockchains/typescript-next.js-hardhat-web3react-tailwind/node_modules/@openzeppelin/contracts/token/ERC721/ERC721.sol": {
-      "lastModificationDate": 1664868176184,
-      "contentHash": "49295810dc45f300e5f84b4b50d88a59",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/ERC721.sol",
+    "/Users/nguyenquang/Documents/git/quang/KingOfFool/contracts/FoolLogic.sol": {
+      "lastModificationDate": 1669717456711,
+      "contentHash": "ced54b2ed109f2347bb3e44df463daeb",
+      "sourceName": "contracts/FoolLogic.sol",
       "solcConfig": {
-        "version": "0.8.7",
+        "version": "0.8.1",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -29,27 +29,61 @@
         }
       },
       "imports": [
-        "./IERC721.sol",
-        "./IERC721Receiver.sol",
-        "./extensions/IERC721Metadata.sol",
-        "../../utils/Address.sol",
-        "../../utils/Context.sol",
-        "../../utils/Strings.sol",
-        "../../utils/introspection/ERC165.sol"
+        "@openzeppelin/contracts4.7.3/access/Ownable.sol",
+        "@openzeppelin/contracts4.7.3/utils/math/SafeMath.sol",
+        "@openzeppelin/contracts4.7.3/security/Pausable.sol",
+        "@openzeppelin/contracts4.7.3/security/ReentrancyGuard.sol",
+        "./FoolVault.sol"
       ],
       "versionPragmas": [
         "^0.8.0"
       ],
       "artifacts": [
-        "ERC721"
+        "FoolLogic",
+        "IERC20"
       ]
     },
-    "/Users/quang/Documents/blockchains/typescript-next.js-hardhat-web3react-tailwind/node_modules/@openzeppelin/contracts/access/Ownable.sol": {
-      "lastModificationDate": 1664868176637,
-      "contentHash": "8398972af73b4e9e5ff3b31cad86234f",
-      "sourceName": "@openzeppelin/contracts/access/Ownable.sol",
+    "/Users/nguyenquang/Documents/git/quang/KingOfFool/contracts/FoolVault.sol": {
+      "lastModificationDate": 1669715898219,
+      "contentHash": "44869425e8bfefda82f890d04c7335de",
+      "sourceName": "contracts/FoolVault.sol",
       "solcConfig": {
-        "version": "0.8.7",
+        "version": "0.8.1",
+        "settings": {
+          "optimizer": {
+            "enabled": false,
+            "runs": 200
+          },
+          "outputSelection": {
+            "*": {
+              "*": [
+                "abi",
+                "evm.bytecode",
+                "evm.deployedBytecode",
+                "evm.methodIdentifiers",
+                "metadata"
+              ],
+              "": [
+                "ast"
+              ]
+            }
+          }
+        }
+      },
+      "imports": [],
+      "versionPragmas": [
+        "^0.8.0"
+      ],
+      "artifacts": [
+        "FoolVault"
+      ]
+    },
+    "/Users/nguyenquang/Documents/git/quang/KingOfFool/node_modules/@openzeppelin/contracts4.7.3/access/Ownable.sol": {
+      "lastModificationDate": 1669714310488,
+      "contentHash": "e436cea06129be2c73cda4b1acc848b5",
+      "sourceName": "@openzeppelin/contracts4.7.3/access/Ownable.sol",
+      "solcConfig": {
+        "version": "0.8.1",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -81,12 +115,12 @@
         "Ownable"
       ]
     },
-    "/Users/quang/Documents/blockchains/typescript-next.js-hardhat-web3react-tailwind/node_modules/@openzeppelin/contracts/token/ERC721/IERC721.sol": {
-      "lastModificationDate": 1664868176546,
-      "contentHash": "27d219ec6f69478d065fdbfa7931da68",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721.sol",
+    "/Users/nguyenquang/Documents/git/quang/KingOfFool/node_modules/@openzeppelin/contracts4.7.3/security/Pausable.sol": {
+      "lastModificationDate": 1669714310489,
+      "contentHash": "25c8108f36fdd472bc78d4c4af240c11",
+      "sourceName": "@openzeppelin/contracts4.7.3/security/Pausable.sol",
       "solcConfig": {
-        "version": "0.8.7",
+        "version": "0.8.1",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -109,21 +143,21 @@
         }
       },
       "imports": [
-        "../../utils/introspection/IERC165.sol"
+        "../utils/Context.sol"
       ],
       "versionPragmas": [
         "^0.8.0"
       ],
       "artifacts": [
-        "IERC721"
+        "Pausable"
       ]
     },
-    "/Users/quang/Documents/blockchains/typescript-next.js-hardhat-web3react-tailwind/node_modules/@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol": {
-      "lastModificationDate": 1664868176574,
-      "contentHash": "592df588492d45fdcf46b3cb608c0fbf",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/IERC721Receiver.sol",
+    "/Users/nguyenquang/Documents/git/quang/KingOfFool/node_modules/@openzeppelin/contracts4.7.3/utils/math/SafeMath.sol": {
+      "lastModificationDate": 1669714310496,
+      "contentHash": "2337f0279507b5edf14a07067adf0d05",
+      "sourceName": "@openzeppelin/contracts4.7.3/utils/math/SafeMath.sol",
       "solcConfig": {
-        "version": "0.8.7",
+        "version": "0.8.1",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -150,52 +184,15 @@
         "^0.8.0"
       ],
       "artifacts": [
-        "IERC721Receiver"
+        "SafeMath"
       ]
     },
-    "/Users/quang/Documents/blockchains/typescript-next.js-hardhat-web3react-tailwind/node_modules/@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol": {
-      "lastModificationDate": 1664868176569,
-      "contentHash": "efbc0d15b80a74e34dbe8da0f3e879bb",
-      "sourceName": "@openzeppelin/contracts/token/ERC721/extensions/IERC721Metadata.sol",
+    "/Users/nguyenquang/Documents/git/quang/KingOfFool/node_modules/@openzeppelin/contracts4.7.3/security/ReentrancyGuard.sol": {
+      "lastModificationDate": 1669714310492,
+      "contentHash": "92f9448b23a90ea3bb932ee55cc3ccce",
+      "sourceName": "@openzeppelin/contracts4.7.3/security/ReentrancyGuard.sol",
       "solcConfig": {
-        "version": "0.8.7",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "../IERC721.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC721Metadata"
-      ]
-    },
-    "/Users/quang/Documents/blockchains/typescript-next.js-hardhat-web3react-tailwind/node_modules/@openzeppelin/contracts/utils/Address.sol": {
-      "lastModificationDate": 1664868175375,
-      "contentHash": "ad714a6368ee7d43cded6bbe8af0b155",
-      "sourceName": "@openzeppelin/contracts/utils/Address.sol",
-      "solcConfig": {
-        "version": "0.8.7",
+        "version": "0.8.1",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -219,18 +216,18 @@
       },
       "imports": [],
       "versionPragmas": [
-        "^0.8.1"
+        "^0.8.0"
       ],
       "artifacts": [
-        "Address"
+        "ReentrancyGuard"
       ]
     },
-    "/Users/quang/Documents/blockchains/typescript-next.js-hardhat-web3react-tailwind/node_modules/@openzeppelin/contracts/utils/Context.sol": {
-      "lastModificationDate": 1664868175457,
+    "/Users/nguyenquang/Documents/git/quang/KingOfFool/node_modules/@openzeppelin/contracts4.7.3/utils/Context.sol": {
+      "lastModificationDate": 1669714310344,
       "contentHash": "5f2c5c4b6af2dd4551027144797bc8be",
-      "sourceName": "@openzeppelin/contracts/utils/Context.sol",
+      "sourceName": "@openzeppelin/contracts4.7.3/utils/Context.sol",
       "solcConfig": {
-        "version": "0.8.7",
+        "version": "0.8.1",
         "settings": {
           "optimizer": {
             "enabled": false,
@@ -258,149 +255,6 @@
       ],
       "artifacts": [
         "Context"
-      ]
-    },
-    "/Users/quang/Documents/blockchains/typescript-next.js-hardhat-web3react-tailwind/node_modules/@openzeppelin/contracts/utils/Strings.sol": {
-      "lastModificationDate": 1664868176733,
-      "contentHash": "9c54c6c065d9e590fdcdd72c451425b9",
-      "sourceName": "@openzeppelin/contracts/utils/Strings.sol",
-      "solcConfig": {
-        "version": "0.8.7",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "Strings"
-      ]
-    },
-    "/Users/quang/Documents/blockchains/typescript-next.js-hardhat-web3react-tailwind/node_modules/@openzeppelin/contracts/utils/introspection/ERC165.sol": {
-      "lastModificationDate": 1664868175827,
-      "contentHash": "0e7db055ce108f9da7bb6686a00287c0",
-      "sourceName": "@openzeppelin/contracts/utils/introspection/ERC165.sol",
-      "solcConfig": {
-        "version": "0.8.7",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [
-        "./IERC165.sol"
-      ],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "ERC165"
-      ]
-    },
-    "/Users/quang/Documents/blockchains/typescript-next.js-hardhat-web3react-tailwind/node_modules/@openzeppelin/contracts/utils/introspection/IERC165.sol": {
-      "lastModificationDate": 1664868176486,
-      "contentHash": "03e6768535ac4da0e9756f1d8a4a018a",
-      "sourceName": "@openzeppelin/contracts/utils/introspection/IERC165.sol",
-      "solcConfig": {
-        "version": "0.8.7",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.0"
-      ],
-      "artifacts": [
-        "IERC165"
-      ]
-    },
-    "/Users/quang/Documents/blockchains/typescript-next.js-hardhat-web3react-tailwind/contracts/KingOfFool.sol": {
-      "lastModificationDate": 1665033072059,
-      "contentHash": "e8be1fe7b034070ffe01c9c4ec776274",
-      "sourceName": "contracts/KingOfFool.sol",
-      "solcConfig": {
-        "version": "0.8.7",
-        "settings": {
-          "optimizer": {
-            "enabled": false,
-            "runs": 200
-          },
-          "outputSelection": {
-            "*": {
-              "*": [
-                "abi",
-                "evm.bytecode",
-                "evm.deployedBytecode",
-                "evm.methodIdentifiers",
-                "metadata"
-              ],
-              "": [
-                "ast"
-              ]
-            }
-          }
-        }
-      },
-      "imports": [],
-      "versionPragmas": [
-        "^0.8.7"
-      ],
-      "artifacts": [
-        "IERC20",
-        "KingOfFool"
       ]
     }
   }
